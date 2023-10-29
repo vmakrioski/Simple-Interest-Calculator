@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Interest Calculator</title>
+    <link rel="shortcut icon" href="interest-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Simple Interest Calculator</h1>
+    <div class="container">
+      <div class="input-wrapper">
+        <div class="wrapper">
+          <label for="principal">Principal (MKD):</label>
+          <input type="number" id="principal" />
+        </div>
+        <div class="wrapper">
+          <label for="rate">Interest Rate (%):</label>
+          <input type="number" id="rate" />
+        </div>
+      </div>
+      <label for="time">Time:</label>
+      <div class="time-wrapper">
+        <input type="number" id="time" />
+        <select name="duration" id="duration">
+          <option value="year">Year</option>
+          <option value="month">Month</option>
+        </select>
+      </div>
+      <div class="btns">
+        <button id="calculate-btn">Calculate</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
